@@ -1,0 +1,8 @@
+Field,Type,Null,Key,Default,Extra
+Division_ID,int(10),NO,PRI,,auto_increment
+Division,varchar(50),NO,,,
+Create_Date,datetime,YES,,CURRENT_TIMESTAMP,
+Created_By,varchar(50),YES,,,
+Last_Update,timestamp,NO,,CURRENT_TIMESTAMP,
+Last_Updated_By,varchar(50),YES,,,
+COUNTRY_ID,int(11),NO,MUL,,

@@ -1,0 +1,4 @@
+Field,Type,Null,Key,Default,Extra
+Contact_ID,int(10),NO,PRI,,auto_increment
+Contact_Name,varchar(50),NO,,,
+Email,varchar(50),NO,,,

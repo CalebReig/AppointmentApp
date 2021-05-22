@@ -1,0 +1,8 @@
+Field,Type,Null,Key,Default,Extra
+User_ID,int(10),NO,PRI,,auto_increment
+User_Name,varchar(50),YES,UNI,,
+Password,text,YES,,,
+Create_Date,datetime,YES,,CURRENT_TIMESTAMP,
+Created_By,varchar(50),YES,,,
+Last_Update,timestamp,NO,,CURRENT_TIMESTAMP,
+Last_Updated_By,varchar(50),YES,,,

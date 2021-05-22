@@ -1,0 +1,15 @@
+Field,Type,Null,Key,Default,Extra
+Appointment_ID,int(10),NO,PRI,,auto_increment
+Title,varchar(50),NO,,,
+Description,varchar(50),YES,,,
+Location,varchar(50),NO,,,
+Type,varchar(50),YES,,,
+Start,datetime,YES,,CURRENT_TIMESTAMP,
+End,datetime,YES,,CURRENT_TIMESTAMP,
+Create_Date,datetime,YES,,CURRENT_TIMESTAMP,
+Created_By,varchar(50),YES,,,
+Last_Update,timestamp,NO,,CURRENT_TIMESTAMP,
+Last_Updated_By,varchar(50),YES,,,
+Customer_ID,int(10),YES,MUL,,
+User_ID,int(10),YES,MUL,,
+Contact_ID,int(10),YES,MUL,,
