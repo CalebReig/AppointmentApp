@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="860.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.CustomersController">
+    <children>
+        <Button layoutX="28.0" layoutY="594.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #DC143C;" text="Close">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+      <Separator layoutX="125.0" layoutY="-41.0" orientation="VERTICAL" prefHeight="675.0" prefWidth="11.0" />
+      <Button layoutX="6.0" layoutY="239.0" mnemonicParsing="false" onAction="#switchToReports" prefHeight="69.0" prefWidth="117.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-background-radius: 10; -fx-border-radius: 10;" text="Reports">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font></Button>
+      <Button layoutX="4.0" layoutY="153.0" mnemonicParsing="false" onAction="#switchToAppointments" prefHeight="75.0" prefWidth="117.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-border-radius: 10; -fx-background-radius: 10;" text="Appointments">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="6.0" layoutY="64.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="77.0" prefWidth="117.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-background-radius: 10; -fx-border-radius: 10; -fx-font-size: 20; -fx-font-weight: bold;" text="Home">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="13.0" prefHeight="45.0" prefWidth="104.0" text="Customers" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="333.0" text="Upcoming Appointments:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="upcomingAptLabel" layoutX="3.0" layoutY="349.0" prefHeight="92.0" prefWidth="121.0" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="2.0" layoutY="470.0" text="Time of last login:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastLoginLabel" layoutX="3.0" layoutY="506.0" prefHeight="61.0" prefWidth="121.0" text="Label">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-3.0" layoutY="319.0" prefHeight="3.0" prefWidth="133.0" />
+      <Separator layoutX="-3.0" layoutY="447.0" prefHeight="3.0" prefWidth="133.0" />
+      <Separator layoutX="-3.0" layoutY="573.0" prefHeight="3.0" prefWidth="133.0" />
+      <Separator layoutX="-4.0" layoutY="59.0" prefHeight="3.0" prefWidth="133.0" />
+      <TableView fx:id="allCustomersTable" layoutX="146.0" layoutY="36.0" prefHeight="511.0" prefWidth="705.0">
+        <columns>
+          <TableColumn fx:id="customerIdColumn" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="customerNameColumn" prefWidth="174.00001525878906" text="Name" />
+            <TableColumn fx:id="customerAddressColumn" minWidth="0.0" prefWidth="181.99990844726562" text="Address" />
+            <TableColumn fx:id="customerPostalCodeColumn" minWidth="0.0" prefWidth="112.0" text="Postal Code" />
+            <TableColumn fx:id="customerFLDColumn" minWidth="0.0" prefWidth="65.99993896484375" text="Division ID" />
+            <TableColumn fx:id="customerPhoneColumn" prefWidth="129.3333740234375" text="Phone Number" />
+        </columns>
+      </TableView>
+      <Button layoutX="395.0" layoutY="567.0" mnemonicParsing="false" onAction="#switchToAddCus" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-background-radius: 10; -fx-border-radius: 10;" text="ADD">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="561.0" layoutY="567.0" mnemonicParsing="false" onAction="#switchToModCus" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-background-radius: 10; -fx-border-radius: 10;" text="UPDATE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="733.0" layoutY="567.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: FFBF69; -fx-border-color: FF9F1C; -fx-background-radius: 10; -fx-border-radius: 10;" text="DELETE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
